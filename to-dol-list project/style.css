@@ -1,0 +1,106 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.box{
+    height:100vh;
+    width:100vw;
+    background:linear-gradient(135deg,#1d1160,#800080);
+    display:flex;
+    justify-content: center;
+}
+.container{
+    margin:40px;
+    background-color:#fff;
+    width:450px;
+    height:300px;
+    border-radius:12px;
+}
+h2{
+    margin-left:20px;
+    padding:20px;
+    display:flex;
+    align-items: center;
+    padding:20px;
+}
+img{
+
+    width:55px;
+    height:35px;
+}
+.search{
+    margin-left:15px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    background:#edeff0;
+    border-radius:35px;
+    padding-left:20px;
+    width:85%;
+}
+input{
+    border:none;
+    outline:none;
+    border-radius:5px;
+    background: transparent;
+    
+}
+button{
+    background-color:red;
+    margin-right:2px;
+    width:80px;
+    color:white;
+    height:40px;
+    border-radius:35px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+ul li{
+    list-style: none;
+    padding:5px;
+    font-size:17px;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    user-select: none;
+    cursor:pointer;
+    position: relative;
+    top:15px;
+    left:35px;
+    padding:7px 12px;
+}
+ul li::before{
+    content:'';
+    height:18px;
+    width:18px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8uSiOWvA0x-CIRPf0jOIQjA2Y0wAX-W2rsQ&s");
+    background-size:cover;
+    position:absolute;
+    top:9px;
+    left:-17px;
+    
+}
+.checked{
+    text-decoration:line-through;
+}
+ul li.checked::before{
+   background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Sign-check-icon.png/600px-Sign-check-icon.png");
+}
+cross{
+    position:absolute;;
+    right:35px;
+    text-align:center;
+    top:-4px;
+     width:30px;
+     height:30px;
+     color:black;
+     font-size:25px;
+     cursor:pointer;
+    border-radius:50%;
+    }
+    cross:hover{
+        background: grey;
+
+    }
